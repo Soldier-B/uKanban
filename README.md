@@ -7,7 +7,7 @@ A minimalist kanban plugin for Godot, loosely inspired by [Nullboard](https://nu
 ## Features
 
 - Lives in its own editor tab alongside 2D, 3D, and Script
-- Multiple columns with drag-and-drop reordering
+- Multiple columns with left/right reordering
 - Multi-line cards with keyboard-driven editing
 - Drag cards between columns and reorder within them
 - Board state saved automatically to `res://.kanban` in your project
@@ -31,7 +31,7 @@ A minimalist kanban plugin for Godot, loosely inspired by [Nullboard](https://nu
 
 ## Usage
 
-Once enabled, the **µKanban** tab appears in the top editor bar. Your board is saved automatically — no manual save needed.
+Once enabled, the **µKanban** tab appears in the top editor bar. Your board is saved automatically, no manual save needed.
 
 The `.kanban` file can be committed alongside your project, keeping your board in sync with your codebase and shared with your team through version control.
 
