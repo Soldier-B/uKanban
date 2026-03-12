@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://fs6nb8eymhb1"]
+
+[ext_resource type="Script" uid="uid://d017eciks880r" path="res://addons/ukanban/column/uk_column.gd" id="1_d5082"]
+[ext_resource type="PackedScene" uid="uid://dojbhla5grgdy" path="res://addons/ukanban/header/uk_header.tscn" id="2_3owa7"]
+
+[node name="Column" type="Control" unique_id=1366947643]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_d5082")
+
+[node name="ColumnLayout" type="VBoxContainer" parent="." unique_id=982524813]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Header" parent="ColumnLayout" unique_id=283250885 instance=ExtResource("2_3owa7")]
+layout_mode = 2
+
+[node name="CardsContainer" type="ScrollContainer" parent="ColumnLayout" unique_id=1187961957]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CardsPadding" type="MarginContainer" parent="ColumnLayout/CardsContainer" unique_id=53013224]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="CardsLayout" type="VBoxContainer" parent="ColumnLayout/CardsContainer/CardsPadding" unique_id=1821979298]
+layout_mode = 2
+size_flags_vertical = 0

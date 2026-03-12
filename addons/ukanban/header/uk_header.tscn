@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dojbhla5grgdy"]
+
+[ext_resource type="Script" uid="uid://2wrtv40mn5is" path="res://addons/ukanban/header/uk_header.gd" id="1_oiqa1"]
+
+[node name="Header" type="Control" unique_id=1881773499]
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+script = ExtResource("1_oiqa1")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1336245278]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer" unique_id=1485487004]
+visible = false
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1827432693]
+layout_mode = 2
