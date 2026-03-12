@@ -33,7 +33,7 @@ A minimalist kanban plugin for Godot, loosely inspired by [Nullboard](https://nu
 
 Once enabled, the **µKanban** tab appears in the top editor bar. Your board is saved automatically — no manual save needed.
 
-Add `.kanban` to your `.gitignore` if you don't want the board committed to your project's repository.
+The `.kanban` file can be committed alongside your project, keeping your board in sync with your codebase and shared with your team through version control.
 
 ### Cards
 
