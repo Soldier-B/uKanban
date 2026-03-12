@@ -1,6 +1,6 @@
 # µKanban
 
-A minimalist kanban plugin for Godot, loosely inspired by [Nullboard](https://nullboard.io).
+A minimalist kanban plugin for Godot, loosely inspired by [Nullboard](https://github.com/apankrat/nullboard).
 
 ---
 
