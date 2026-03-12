@@ -3,7 +3,7 @@ extends Node
 class_name UKFile
 
 const FILE_PATH = "res://.kanban"
-const DEFAULT_DATA : Variant = [ { "name": "Todos", "cards": []}]
+const DEFAULT_DATA : Variant = [ { "name": "Todos", "cards": ["Quick tips:\n- Click to edit a card\n- Hover a card for options\n- Hold+drag to move cards around\n- Project > Tools > µKanban Help"]}]
 
 var save_timer : Timer
 var _pending_columns: Array[UKColumn] = []
