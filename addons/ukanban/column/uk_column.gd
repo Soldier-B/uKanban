@@ -38,6 +38,7 @@ func _on_header_text_changed(new_text: String) -> void:
 	# Only save if this isn't a new column being cancelled, or text has actually changed
 	if not remove_on_cancel or text != prev_text:
 		UKEvents.instance.column_updated.emit(self)
+	remove_on_cancel = false
 
 func _on_header_new_card_requested() -> void:
 	var card = UKCard.new()

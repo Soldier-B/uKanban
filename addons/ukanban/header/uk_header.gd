@@ -110,17 +110,22 @@ func _handle_editing(event : InputEvent) -> void:
 				return
 			text = prev_text
 		elif event.keycode == KEY_ENTER or event.keycode == KEY_KP_ENTER:
-			text = line_edit.text
+			if not line_edit.text.is_empty():
+				text = line_edit.text
 		else:
 			return
 
 		line_edit.release_focus.call_deferred()
 
 func _on_focus_exited() -> void:
-	text = line_edit.text
-	if remove_on_cancel and text.is_empty():
-		edit_cancelled.emit()
-		return
+	var new_text = line_edit.text
+	if new_text.is_empty():
+		if remove_on_cancel:
+			edit_cancelled.emit()
+			return
+		new_text = prev_text
+	text = new_text
+	remove_on_cancel = false
 	_set_state(UKColumnHeaderState.IDLE)
 
 func _set_state(state : UKColumnHeaderState) -> void:
